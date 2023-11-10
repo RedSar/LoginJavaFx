@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.imrane.login.WelcomeController">
+   <children>
+      <ImageView fitWidth="1024.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@welcome.png"/>
+         </image>
+      </ImageView>
+      <Pane layoutX="133.0" layoutY="35.0" prefHeight="470.0" prefWidth="759.0"
+            style="-fx-background-color: rgba(0,0,0,0.3);">
+         <children>
+            <Label fx:id="lbl_username" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="33.0"
+                   prefHeight="69.0" prefWidth="746.0" text="Hi " textAlignment="CENTER" textFill="#ffffffcc">
+               <font>
+                  <Font name="Segoe Script Bold" size="37.0"/>
+               </font>
+            </Label>
+            <Line endX="280.0" layoutX="364.0" layoutY="121.0" startX="-302.0" stroke="WHITE"/>
+            <Label fx:id="lbl_bio" layoutX="68.0" layoutY="138.0" prefHeight="206.0" prefWidth="575.0" text="Hi "
+                   textFill="#eeeeeecc">
+               <font>
+                  <Font name="Segoe Script" size="24.0"/>
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btn_logout" cancelButton="true" layoutX="800.0" layoutY="600.0" mnemonicParsing="false"
+              prefHeight="47.0" prefWidth="165.0" style="-fx-background-color: rgb(0,0,0,0.8); -fx-cursor: hand;"
+              text="LOGOUT" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Segoe UI" size="20.0"/>
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
